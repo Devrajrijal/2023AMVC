@@ -1,9 +1,10 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using _2023AMVC.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace _2023AMVC.Controllers;
-
+[Authorize]
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;

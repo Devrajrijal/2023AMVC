@@ -25,8 +25,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
-app.UseAuthorization();
+app.MapRazorPages();
+app.UseAuthorization();        //sologolosknldvsknlvsvknslkdvnslkdvn
 
 app.MapControllerRoute(
     name: "default",
